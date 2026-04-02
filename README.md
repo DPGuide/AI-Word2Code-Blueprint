@@ -1,5 +1,6 @@
 <img width="993" height="599" alt="image" src="https://github.com/user-attachments/assets/cb884d55-9f77-46a3-bbeb-ff1e875c8399" />
 
+***sure works but BastionFS its only for owen file system , there is not realy a need for you ! its NextGen ! you can push the button BastionFS its now simulation for you all other works***
 
 ***CMD Bash its based for c / c++ but just try json etc...***
 
