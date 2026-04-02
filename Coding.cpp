@@ -15,8 +15,8 @@
 // Externe Bibliotheken (MÜSSEN verlinkt sein: -lcurl)
 #include <curl/curl.h>
 #include "json.hpp" // nlohmann/json
-#include "bastion_engine.h"
-#include "schneider_lang.h"
+//#include "bastion_engine.h" <------- Private because of NEXTGEN
+//#include "schneider_lang.h" 
 #pragma comment(lib, "comctl32.lib")
 using json = nlohmann::json;
 // ============================================
@@ -1105,9 +1105,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam) 
                 // 2. Deine Titanium-Engine zünden
                 std::thread([]() {
                     std::string targetFile = "generated_logic.cpp";
-                    BastionEngine engine; 
-                    engine.isRunning = true;
-                    engine.Process(targetFile, 84);
+//                    BastionEngine engine; 
+//                    engine.isRunning = true;
+//                    engine.Process(targetFile, 84);
                 }).detach(); // <-- Thread endet hier
             }
             // --- 3. RUN ENGINE ---
